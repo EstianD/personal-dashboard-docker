@@ -1,0 +1,36 @@
+<div class="wrapper fadeInDown">
+   <div id="formContent">
+      <!-- Tabs Titles -->
+
+      <%- include('./partials/messages-error') %>
+      <!-- USER DETAILS -->
+      <div class="row" class="login-panel">
+         <div class="col-md-12">
+            <form action="/users/save_personal_data" method="POST" autocomplete="off">
+               <div class="form-group">
+                  <div class="dates">
+                     <label for="">Personal Details</label>
+                     <div class="input-group mb-4">
+                        <input name='date-of-birth' class="form-control datepicker" type="text"
+                           placeholder="Date of Birth">
+                     </div>
+
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="">
+                     <div class="input-group mb-4">
+                        <input name='user-weight' class="form-control" type="number" placeholder="Weight(kg)">
+
+                     </div>
+
+                  </div>
+               </div>
+
+               <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+         </div>
+      </div>
+      <br />
+   </div>
+</div>
